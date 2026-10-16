@@ -189,7 +189,7 @@ const pillars = [
   ["chat","Straight answers afterwards","Not sure what size or type to buy? Send us a message on WhatsApp and we’ll advise you."]
 ];
 const brand = () => `<span style="display:inline-flex;flex-direction:column;line-height:1;text-decoration:none">
-  <span style="display:inline-flex;align-items:center;white-space:nowrap;font-family:'Arial Black',Arial,Helvetica,sans-serif;font-weight:900;font-size:21px;letter-spacing:.3px;color:#8B1A12">OLUB<svg viewBox="0 0 12 24" width="13" height="25" style="margin:0 1px" aria-hidden="true"><path d="M8.5 0 1 13.5h4.6L3.6 24 11.5 9.8H6.9z" fill="#F5B800" stroke="#D98E00" stroke-width=".6" stroke-linejoin="round"/></svg>Z ELECTRICAL CO.</span>
+  <span style="display:inline-flex;align-items:center;white-space:nowrap;font-family:'Arial Black',Arial,Helvetica,sans-serif;font-weight:900;font-size:clamp(12px,3.6vw,21px);letter-spacing:.3px;color:#8B1A12">OLUB<svg viewBox="0 0 12 24" style="height:1.2em;width:auto;margin:0 1px" aria-hidden="true"><path d="M8.5 0 1 13.5h4.6L3.6 24 11.5 9.8H6.9z" fill="#F5B800" stroke="#D98E00" stroke-width=".6" stroke-linejoin="round"/></svg>Z ELECTRICAL CO.</span>
   
 </span>`;
 const logo = (size) => `<span class="flex h-8 w-8 items-center justify-center border border-primary/60 bg-primary/10 text-primary">${icon("bulb","!h-6 !w-6")}</span>`;
@@ -202,7 +202,7 @@ const header = () => `
     <nav class="hidden items-center gap-8 md:flex">
       ${navLinks.map(([l,h]) => `<a href="${h}" class="font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:text-primary">${l}</a>`).join("")}
     </nav>
-    <a class="btn btn-primary" target="_blank" rel="noreferrer" href="${waLink(business.whatsapp, `Hello ${business.name}, I have a question about your products.`)}">${icon("msg","mr-2")}WhatsApp</a>
+    <a class="btn btn-primary" target="_blank" rel="noreferrer" href="${waLink(business.whatsapp, `Hello ${business.name}, I have a question about your products.`)}">${icon("msg","sm:mr-2")}<span class="hidden sm:inline">WhatsApp</span></a>
   </div>
 </header>`;
 

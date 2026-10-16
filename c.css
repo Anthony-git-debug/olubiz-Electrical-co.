@@ -1,5 +1,6 @@
 :root{--background:0 0% 100%;--foreground:215 45% 12%;--card:199 75% 96%;--card-foreground:215 45% 12%;--primary:4 74% 48%;--primary-foreground:0 0% 100%;--secondary:199 70% 91%;--secondary-foreground:215 45% 12%;--muted:199 60% 93%;--muted-foreground:215 20% 38%;--destructive:0 72% 51%;--destructive-foreground:0 0% 100%;--border:199 45% 82%;--input:199 45% 78%;--ring:4 74% 48%;
     --font-heading:'Space Grotesk',ui-sans-serif,system-ui,sans-serif;--font-body:'Inter',ui-sans-serif,system-ui,sans-serif;--font-mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace}
+    html, body { overflow-x: hidden; max-width: 100%; }
     html{scroll-behavior:smooth;scroll-padding-top:5.5rem}
     *{border-color:hsl(var(--border))}
     body{background:hsl(var(--background));color:hsl(var(--foreground));font-family:var(--font-body);-webkit-font-smoothing:antialiased}
