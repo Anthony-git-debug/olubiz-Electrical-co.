@@ -23,10 +23,10 @@ const business = {
   const rawProducts = [
     {
       category: "power",
-      name: "3.5kVA Hybrid Inverter",
+      name: "AC and DC surges, voltage protectors and breakers",
       image:
-        "https://media.base44.com/images/public/6ace3e4dfe7ba5dff62c71e7/56da450b5_generated_image.png",
-      alt: "3.5kVA hybrid solar inverter PW-3500H with blank display panel on a black background",
+        "Images/AC.jpeg",
+      alt: "AC and DC surges, breakers",
     },
     {
       category: "power",
@@ -51,6 +51,13 @@ const business = {
     },
     {
       category: "cables",
+      name: "Solar cables",
+      image:
+        "Images/Solar cables.jpeg",
+      alt: "Wall Sockets",
+    },
+    {
+      category: "cables",
       name: "Wall Sockets",
       image:
         "Images/Socket.jpeg",
@@ -58,10 +65,24 @@ const business = {
     },
     {
       category: "cables",
+      name: "Wall brackets",
+      image:
+        "Images/Wall brackets.jpeg",
+      alt: "Wall brackets",
+    },
+    {
+      category: "cables",
       name: "Distribution Boards",
       image:
         "Images/d.jpeg",
       alt: "Distribution boards ",
+    },
+    {
+      category: "cables",
+      name: "Cooker units and Cooker box",
+      image:
+        "Images/Cooker units.jpeg",
+      alt: "Cooker units",
     },
     {
       category: "lighting",
@@ -100,10 +121,10 @@ const business = {
     },
     {
       category: "lighting",
-      name: "Wall brackets",
+      name: "Security light",
       image:
-        "Images/Drop fittings and Wall fittins.jpeg",
-      alt: "Wall brackets",
+        "Images/Security lights.jpeg",
+      alt: "Security lights",
     },
     {
       category: "lighting",
@@ -130,16 +151,16 @@ const business = {
     {
       id: "power",
       label: "Power & Backup",
-      blurb: "Inverters, deep-cycle batteries and solar for when the grid goes down.",
+      blurb: "Solar, AC and DC surge protectors, voltage protectors and breakers to keep your equipment safe.",
       image: products.find((p) => p.category === "power").image,
-      alt: "Inverter and battery range for power backup",
+      alt: "Solar panel and AC and DC range for power backup",
     },
     {
       id: "cables",
       label: "Cables & Fittings",
-      blurb: "Copper cable, weatherproof sockets, boards and the fittings that hold it together.",
+      blurb: "Solar cables in all sizes, copper cables, distribution boards and boxes, cooker units, sockets and the fittings that hold it together.",
       image: products.find((p) => p.category === "cables").image,
-      alt: "Copper cable, sockets and distribution boards",
+      alt: "Solar cables in all sizes, copper cables, distribution boards and boxes, cooker units, sockets and the fittings",
     },
     {
       id: "lighting",
@@ -214,7 +235,7 @@ const hero = () => `
     <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/70"></div>
   </div>
   <div class="relative mx-auto max-w-6xl px-5 py-24 sm:px-8 sm:py-32 lg:py-40">
-    <p class="font-mono text-[11px] uppercase tracking-[0.3em] text-primary">DEALER & SUPPLIER OF ELECTRICAL MATERIALS, LIGHTINGS & FITTINGS</p>
+    <p class="font-mono text-[11px] uppercase tracking-[0.3em] text-primary">DEALER & SUPPLIER OF ELECTRICAL MATERIALS, LIGHTINGS & FITTINGS.</p>
     <h1 class="mt-6 max-w-3xl font-heading text-4xl font-bold leading-[1.03] tracking-[-0.03em] sm:text-6xl lg:text-7xl">Power that<br />stays on</h1>
     <p class="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">We provide high quality electrical materials,<br>lighting products and accessories for homes,<br>offices and industries.It is safe, Reliable and Affordable.</p>
     <div class="mt-10 flex flex-col gap-3 sm:flex-row">
